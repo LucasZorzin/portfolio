@@ -473,6 +473,10 @@ a {
   }
 }
 
+.section {
+  height: 100vh !important;
+}
+
 .home {
   background-image: url("../assets/img/background-portfolio.gif");
   background-repeat: no-repeat;
@@ -1606,6 +1610,9 @@ a {
   position: absolute;
   background-color: #dee1e9;
   width: 70%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   top: 0;
   right: 0;
   bottom: 0;
