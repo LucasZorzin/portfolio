@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="lucaszorzincml@gmail.com">
+    <title>Zorzin | Front-End Web Developer</title>
+
+    <link rel="canonical" href="">
+    <!-- Page Icon -->
+    <link rel="icon" type="image/x-icon" href="./src/assets/img/lucas-logo.png">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link href="./src/css-scss/fontello.css" rel="stylesheet">
+    <!--Bs CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--CSS Styles-->
+    <link href="./src/css-scss/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <!-- btn -->
+            <div id="nav-icon" class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- nav -->
+            <ul class="navbar">
+                <li class="navbar__item"><a class="navbar__item-link" href="index.html">HOME</a> </li>
+                <li class="navbar__item"><a class="navbar__item-link" href="#about-me">ABOUT ME</a> </li>
+                <li class="navbar__item"><a class="navbar__item-link" href="#my-work">MY WORKS</a></li>
+                <li class="navbar__item"><a class="navbar__item-link" href="#skills">SKILLS</a></li>
+                <li class="navbar__item"><a class="navbar__item-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Loader -->
+    <div id="loader">
+        <img class="loader__logo" src="./src/assets/img/lucas-logo.png" alt="Lucas Zorzin">
+        <h1 class="loader__name">ZORZIN</h1>
+    </div>
+
+    <!-- Particles -->
+    <div id="particles-js"></div>
+
+    <main id="fullpage">
+        <!-- home -->
+        <section id="parallax" class="section home">
+            <div class="row home__content">
+                <h1 class="col-12 home__content-title">Lucas Zorzin</h1>
+                <h3 class="col-12 home__content-subtitle"><span class="typed-home"></span></h3>
+                <a href="#my-work" class="col-2 mt-5 home__content-a">
+                    <button class="home__content-a-btn home__content-a-btn--animated"><span>PORTFOLIO</span></button>
+                </a>
+            </div>
+            <a href="#about-me"><img class="home__arrow" src="./src/assets/img/scrolldown.gif" alt="scroll down"></a>
+        </section>
+
+        <!-- About Me -->
+        <section class="section about-me">
+            <div class="titles-lucas col-12">
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 about">
+                    <h4 class="about__h4">HI THERE! I'M</h4>
+                    <h2 class="about__h2">Lucas Zorzin</h2>
+                    <h3 class="about__h3">Front-End Web Developer 💻</h3>
+                    <p class="about__p">
+                        I'm a front-end developer from Buenos Aires, Argentina.
+                        I'm interested in the entire development spectrum and working on ambitious projects with
+                        positive people.
+                        I consider myself as a well-organised person and problem solver with high attention to detail.
+                        Currently, I'm studying to become a Full Stack Web Developer and besides, I'm a Computer
+                        Engineering Student at UNLaM University.
+                    </p>
+                    <a href="https://drive.google.com/uc?id=15-zTiTHmwggAzLuAxp7HlKfGxL4a0QAj" target="_blank" class="about-cv">
+                        <button class="about-cv__btn about-cv__btn--animated"><span>Download CV</span></button>
+                    </a>
+
+                </div>
+
+                <div class="col about-img">
+                    <img src="./src/assets/img/zorzin-avatar.png" alt="Lucas Zorzin - Avatar">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- My Work -->
+        <section class="section my-work">
+            <div class="titles-lucas col-12">
+                <h2>My Works</h2>
+            </div>
+
+            <p class="work-title">Selected projects<span class="typed"></span></p>
+
+            <div class="carousel-portfolio">
+
+                <div class="tacobox portfolio-container">
+                    <div class=" portfolio-container__logo"><img src="./src/assets/img/tacobox.png" alt="TACOBOX"></div>
+                    <div class="view-project">
+                        <h4>VIEW PROJECT</h4>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>TACOBOX</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            class="bi bi-zoom-in" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                            <path
+                                d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="greec-x portfolio-container">
+                    <div class=" portfolio-container__logo"><img src="./src/assets/img/greec-x.png" alt="GREEC X"></div>
+                    <div class="view-project">
+                        <h4>VIEW PROJECT</h4>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>GREEC X</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            class="bi bi-zoom-in" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                            <path
+                                d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="taurus portfolio-container">
+                    <div class=" portfolio-container__logo"><img src="./src/assets/img/taurus.png"
+                            alt="TAURUS ARGENTINA"></div>
+                    <div class="view-project">
+                        <h4>VIEW PROJECT</h4>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>TAURUS ARGENTINA</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            class="bi bi-zoom-in" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                            <path
+                                d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cd portfolio-container">
+                    <div class=" portfolio-container__logo"><img src="./src/assets/img/cd-buenas-ideas.png"
+                            alt="CD BUENAS IDEAS"></div>
+                    <div class="view-project">
+                        <h4>VIEW PROJECT</h4>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>CD BUENAS IDEAS</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            class="bi bi-zoom-in" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                            <path
+                                d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                            <path fill-rule="evenodd"
+                                d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Works Modal -->
+            <!-- Tacobox -->
+            <div class="works-modal">
+                <button class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                        <path fill-rule="evenodd"
+                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                    </svg>
+                </button>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="works-modal__logo" src="./src/assets/img/tacobox.png" alt="tacobox">
+                    </div>
+                    <div class="col-12 col-md-6 description">
+                        <h2>TACOBOX</h2>
+                        <p>Interactive website created with JavaScript, CSS and HTML. <br>Ajax was used to get the data,
+                            and Google Sheets as a 'database', which can be modified by anyone without programming
+                            knowledge.</p>
+                        <a href="https://github.com/LucasZorzin/tacobox" target="_blank"><button>View code on
+                                GitHub</button></a>
+                        <a href="https://lucaszorzin.github.io/tacobox/" target="_blank">
+                            <button>VISIT SITE
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Greec X -->
+            <div class="works-modal">
+                <button class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                        <path fill-rule="evenodd"
+                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                    </svg>
+                </button>
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <img class="works-modal__logo" src="./src/assets/img/greec-x.png" alt="greec x">
+                    </div>
+                    <div class="col-12 col-md-5 description">
+                        <h2>GREEC X</h2>
+                        <p>Static website created with HTML, CSS and JavaScript.</p>
+                        <a href="https://github.com/LucasZorzin/greec-x" target="_blank"><button>View code on
+                                GitHub</button></a>
+                        <a href="https://lucaszorzin.github.io/greec-x/" target="_blank">
+                            <button>VISIT SITE
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Taurus -->
+            <div class="works-modal">
+                <button class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                        <path fill-rule="evenodd"
+                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                    </svg>
+                </button>
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <img class="works-modal__logo" src="./src/assets/img/taurus.png" alt="taurus argentina">
+                    </div>
+                    <div class="col-12 col-md-5 description">
+                        <h2>TAURUS ARGENTINA</h2>
+                        <p>E-commerce created with WordPress and Woocommerce.</p>
+                        <a href="https://drive.google.com/file/d/1pHkQYUwvpvl4G4EpFHBOLoVAy5Sl1Uuq/view?usp=sharing" target="_blank">
+                            <button>VISIT SITE
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CD Buenas Ideas -->
+            <div class="works-modal">
+                <button class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                        <path fill-rule="evenodd"
+                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                    </svg>
+                </button>
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <img class="works-modal__logo" src="./src/assets/img/cd-buenas-ideas.png" alt="cd buenas ideas">
+                    </div>
+                    <div class="col-12 col-md-5 description">
+                        <h2>CD Buenas Ideas</h2>
+                        <p>Static website created with HTML, CSS and JavaScript.</p>
+                        <a href="https://cdbuenasideas.com/" target="_blank">
+                            <button>VISIT SITE
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+        <section class="section skills">
+            <div class="titles-lucas col-12">
+                <h2>SKILLS</h2>
+            </div>
+            <div class="row services-position">
+                <div class="col-3 services">
+                    <div class="svg">
+                        <i class="icon-gauge"></i>
+                    </div>
+                    <h4>Fast</h4>
+                    <p>Fast work and load times and lag free interaction.</p>
+                </div>
+
+                <div class="col-3 services">
+                    <div class="svg"><img src="./src/assets/img/responsive.svg" alt="icon"></div>
+                    <h4>Responsive</h4>
+                    <p>My layouts will work on any device, big or small.</p>
+                </div>
+
+                <div class="col-3 services">
+                    <div class="svg">
+                        <i class="icon-lightbulb"></i>
+                    </div>
+                    <h4>Intuitive</h4>
+                    <p>Strong preference for easy to use, intuitive UX/UI.</p>
+                </div>
+
+                <div class="col-3 services">
+                    <div class="svg">
+                        <i class="icon-heart-empty"></i>
+                    </div>
+                    <h4>Retailer</h4>
+                    <p>Organized and aesthetic websites with unique details.</p>
+                </div>
+            </div>
+
+            <!-- carousel -->
+            <div class="carousel-skills">
+                <div class="skills-container skills-container--html">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/html.png" alt="html"></div>
+                    <h4>HTML</h4>
+                </div>
+
+                <div class="skills-container skills-container--css">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/css.png" alt="css"></div>
+                    <h4>CSS</h4>
+                </div>
+
+                <div class="skills-container skills-container--bs">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/bootstrap.png" alt="bootstrap">
+                    </div>
+                    <h4>Bootstrap</h4>
+                </div>
+
+
+                <div class="skills-container skills-container--sass">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/sass.png" alt="sass"></div>
+                    <h4>Sass</h4>
+                </div>
+
+                <div class="skills-container skills-container--js">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/js.png" alt="javascript"></div>
+                    <h4>JavaScript</h4>
+                </div>
+
+                <div class="skills-container skills-container--jquery">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/jquery.png" alt="jquery"></div>
+                    <h4>jQuery</h4>
+                </div>
+
+                <div class="skills-container skills-container--react">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/react.png" alt="html"></div>
+                    <h4>React Js</h4>
+                </div>
+
+                <div class="skills-container skills-container--git">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/git.png" alt="git"></div>
+                    <h4>Git</h4>
+                </div>
+
+                <div class="skills-container skills-container--github">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/github.png" alt="Github"></div>
+                    <h4>Github</h4>
+                </div>
+
+                <div class="skills-container skills-container--wordpress">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/wordpress.png" alt="WordPress">
+                    </div>
+                    <h4>WordPress</h4>
+                </div>
+
+                <div class="skills-container skills-container--Photoshop">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/ps.png" alt="Photoshop"></div>
+                    <h4>Photoshop</h4>
+                </div>
+
+                <div class="skills-container skills-container--Illustrator">
+                    <div class=" skills-container__logo"><img src="./src/assets/img/ai.png" alt="Illustrator"></div>
+                    <h4>Illustrator</h4>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact">
+            <div class="titles-lucas col-12">
+                <h2>CONTACT</h2>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bs JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Typed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- FullPage -->
+    <script src="./js/fullpage.js"></script>
+    <!-- Carousel Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
