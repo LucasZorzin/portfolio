@@ -834,9 +834,6 @@ a {
 
 .portfolio-container .portfolio-container__logo img {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 .portfolio-container .portfolio-info {
