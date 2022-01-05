@@ -26,6 +26,7 @@ const pageSections = new fullpage('#fullpage', {
 });
 
 //// Parallax effect (home)
+if (window.matchMedia("(min-width: 992px)").matches) {
 (() => {
 	document.addEventListener("mousemove", parallax);
 	const elem = document.querySelector('#parallax');
@@ -39,6 +40,7 @@ const pageSections = new fullpage('#fullpage', {
 		elem.style.backgroundPosition = x;
 	}
 })();
+}
 
 //// Arrow scrolldown
 $('.home__arrow').on("contextmenu", (e) => { return false; });
@@ -259,8 +261,25 @@ var typed = new Typed('.typed-home', {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 // My works
-	typed = new Typed('.typed', {
+	typed = new Typed('.typed-works', {
 	strings: ["I've worked on in the past.", "I'm proud of."],
+
+	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	typeSpeed: 30, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 1000, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	backSpeed: 50, // Velocidad en milisegundos para borrrar una letra,
+	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	shuffle: false, // Alterar el orden en el que escribe las palabras.
+	backDelay: 2000, // Tiempo de espera despues de que termina de escribir una palabra.
+	loop: true, // Repetir el array de strings
+	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	showCursor: true, // Mostrar cursor palpitanto
+	cursorChar: '|', // Caracter para el cursor
+	contentType: 'html', // 'html' o 'null' para texto sin formato
+});
+// My Skills
+typed = new Typed('.typed-skills', {
+	strings: ["that I know.", "that I use on a daily basis."],
 
 	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
 	typeSpeed: 30, // Velocidad en mlisegundos para poner una letra,
@@ -278,9 +297,11 @@ var typed = new Typed('.typed-home', {
 
 // Modal
 const tacobox = $('.works-modal')[0];
-const greecX = $('.works-modal')[1];
-const taurus = $('.works-modal')[2];
-const cd = $('.works-modal')[3];
+const greecX = $('.works-modal')[2];
+const taurus = $('.works-modal')[3];
+const cd = $('.works-modal')[4];
+const puma = $('.works-modal')[1];
+
 $('.tacobox').click(() => {
     tacobox.classList.add('modal-active');
 	$('.carousel-portfolio').css({'opacity':'0.5', 'filter':'blur(3px)'});
@@ -295,6 +316,10 @@ $('.taurus').click(() => {
 })
 $('.cd').click(() => {
     cd.classList.add('modal-active');
+	$('.carousel-portfolio').css({'opacity':'0.5', 'filter':'blur(3px)'});
+})
+$('.puma').click(() => {
+    puma.classList.add('modal-active');
 	$('.carousel-portfolio').css({'opacity':'0.5', 'filter':'blur(3px)'});
 })
 
@@ -315,13 +340,24 @@ $('.close-btn').click(() => {
     cd.classList.remove('modal-active');
 	$('.carousel-portfolio').css({'opacity':'1', 'filter':'none'});
 });
+$('.close-btn').click(() => {
+    puma.classList.remove('modal-active');
+	$('.carousel-portfolio').css({'opacity':'1', 'filter':'none'});
+});
 
 // menu
 // $(document).ready(function(){
-	$('#nav-icon').click(function(){
-		$(this)[0].classList.toggle('open');
-		$('.navbar')[0].classList.toggle('open-nav');
-	});
+	// $('#nav-icon').click(function(){
+	// 	$(this)[0].classList.toggle('open');
+	// 	$('.navbar')[0].classList.toggle('open-nav');
+	// });
+
+	var navIcon = document.querySelector("#nav-icon");
+	var navBar = document.querySelector(".navbar");
+	navIcon.addEventListener("click", (()=>{
+		navIcon.classList.toggle('open');
+		navBar.classList.toggle('open-nav')
+	}))
 
 $('.navbar__item-link').click(()=>{
 	$('.navbar')[0].classList.toggle('open-nav');
