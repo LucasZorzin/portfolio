@@ -33,11 +33,14 @@
 .world-icon{
     height: 35px;
     width: 35px;
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 2%;
     svg{
         fill: white;
         width: 35px;
-        position: absolute;
-        top: 11%;
     }
 }
 

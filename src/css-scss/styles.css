@@ -2202,13 +2202,24 @@ a {
 .world-icon {
   height: 35px;
   width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2%;
 }
 
 .world-icon svg {
   fill: white;
   width: 35px;
-  position: absolute;
-  top: 11%;
 }
 
 @media screen and (max-device-width: 820px) and (min-device-height: 100px) and (orientation: landscape) {
