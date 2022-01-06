@@ -7,6 +7,17 @@ window.onload = () => {
 }
 $('#loader').on("contextmenu", (e) => { return false; });
 
+//// Language
+$('#en').click(() => {
+	$('#language').remove()
+})
+$('#en-from-es').click(() => {
+    location.href="../index.html"
+})
+$('#es').click(() => {
+    location.href="../es/index.html"
+})
+
 //// Fullpage preferences
 const pageSections = new fullpage('#fullpage', {
 	autoScrolling: true,
@@ -167,7 +178,7 @@ $('.carousel-portfolio').slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
 	autoplay: true,
-	pauseOnFocus: false,
+	pauseOnFocus: true,
 	autoplaySpeed:2700,
 	arrows: true,
 	dots: true,
@@ -195,9 +206,6 @@ $('.carousel-portfolio').slick({
 				slidesToScroll: 1
 			}
 		}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
 	]
 });
 
@@ -236,13 +244,10 @@ $('.carousel-skills').slick({
 				slidesToScroll: 1
 			}
 		}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
 	]
 });
 
-//// Typed
+//// Typed english
 // Home
 var typed = new Typed('.typed-home', {
 	strings: ["Front-End Web Developer."],
@@ -294,6 +299,60 @@ typed = new Typed('.typed-skills', {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+//// Typed spanish
+// Home es
+var typed = new Typed('.typed-home-es', {
+	strings: ["Desarrollador Web Front-End."],
+
+	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	typeSpeed: 55, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 1000, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	backSpeed: 70, // Velocidad en milisegundos para borrrar una letra,
+	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	shuffle: false, // Alterar el orden en el que escribe las palabras.
+	backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+	loop: true, // Repetir el array de strings
+	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	showCursor: true, // Mostrar cursor palpitanto
+	cursorChar: '|', // Caracter para el cursor
+	contentType: 'html', // 'html' o 'null' para texto sin formato
+});
+// My works es
+	typed = new Typed('.typed-works-es', {
+	strings: ["que he realizado en el pasado.", "de los cuales estoy orgulloso."],
+
+	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	typeSpeed: 30, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 1000, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	backSpeed: 50, // Velocidad en milisegundos para borrrar una letra,
+	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	shuffle: false, // Alterar el orden en el que escribe las palabras.
+	backDelay: 2000, // Tiempo de espera despues de que termina de escribir una palabra.
+	loop: true, // Repetir el array de strings
+	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	showCursor: true, // Mostrar cursor palpitanto
+	cursorChar: '|', // Caracter para el cursor
+	contentType: 'html', // 'html' o 'null' para texto sin formato
+});
+// My Skills es
+typed = new Typed('.typed-skills-es', {
+	strings: ["Conocimientos adquiridos.", "Herramientas que utilizo en mi día a día."],
+
+	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	typeSpeed: 30, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 1000, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	backSpeed: 50, // Velocidad en milisegundos para borrrar una letra,
+	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	shuffle: false, // Alterar el orden en el que escribe las palabras.
+	backDelay: 2000, // Tiempo de espera despues de que termina de escribir una palabra.
+	loop: true, // Repetir el array de strings
+	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	showCursor: true, // Mostrar cursor palpitanto
+	cursorChar: '|', // Caracter para el cursor
+	contentType: 'html', // 'html' o 'null' para texto sin formato
+});
+
 
 // Modal
 const tacobox = $('.works-modal')[0];

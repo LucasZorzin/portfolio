@@ -62,14 +62,9 @@ a {
     background-color: white;
 }
 
-// .hola{
-
-//     display: flex;
-//     flex-direction: column;
-//     position: absolute;
-//     top: 30%;
-//     bottom: 0;
-//     right: 0;
-//     left: -10%;
-//     margin: auto;
-// }
+.hide{
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    z-index: -50 !important;
+}
