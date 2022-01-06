@@ -46,7 +46,7 @@ if (window.matchMedia("(min-width: 992px)").matches) {
 		let h = window.innerHeight;
 		let mouseX = e.clientX;
 		let mouseY = e.clientY;
-		let move = `${40 - (mouseX - w) * 0.025}% ${15 - (mouseY - h) * 0.090}%`;
+		let move = `${32 - (mouseX - w) * 0.030}% ${15 - (mouseY - h) * 0.095}%`;
 		let x = `${move}`;
 		elem.style.backgroundPosition = x;
 	}
