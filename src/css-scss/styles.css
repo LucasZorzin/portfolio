@@ -1261,7 +1261,7 @@ a {
   }
 }
 
-@media (max-device-width: 733px) and (min-device-height: 100px) and (orientation: landscape) {
+@media screen and (max-device-width: 820px) and (min-device-height: 100px) and (orientation: landscape) {
   .home .home__arrow {
     width: 10px;
     bottom: 4%;
@@ -2209,6 +2209,12 @@ a {
   width: 35px;
   position: absolute;
   top: 11%;
+}
+
+@media screen and (max-device-width: 820px) and (min-device-height: 100px) and (orientation: landscape) {
+  .world-icon {
+    display: none !important;
+  }
 }
 
 @media (min-width: 992px) {

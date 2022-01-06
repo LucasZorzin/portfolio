@@ -41,6 +41,13 @@
     }
 }
 
+// Smartphone: orientation landscape
+@media screen and (max-device-width: 820px) and (min-device-height: 100px) and (orientation: landscape) {
+    .world-icon{
+        display: none !important;
+    }
+}
+
 ////// PC
 @media (min-width: 992px) {
     .check{
