@@ -1,0 +1,31 @@
+{
+    "home":{
+        "subtitle1": "Full-Stack Web Developer.",
+        "subtitle2": "(Oriented to Front-End Development)"
+    },
+    "aboutMe":{
+        "tag": "ABOUT ME",
+        "iam": "HI THERE! I'M",
+        "position": "Full-Stack Web Developer 💻",
+        "about": "I'm a Full-Stack Developer and a Computer Engineering Student from Buenos Aires, Argentina. I'm interested in taking part in projects that required me to work outside my comfort and knowledge set. I consider myself as a well-organised person and problem solver with high attention to detail.",
+        "download": "download"
+    },
+    "works":{
+        "tag": "MY WORKS"
+    },
+    "skills":{
+        "tag": "SKILLS",
+        "fast": "fast",
+        "fastP": "Fast work and load times and lag free interaction.",
+        "responsive": "responsive",
+        "responsiveP": "My layouts will work on any device, big or small.",
+        "intuitive": "intuitive",
+        "intuitiveP": "Strong preference for easy to use, intuitive UX/UI.",
+        "retailer": "retailer",
+        "retailerP": "Organized and aesthetic websites with unique details."
+    },
+    "contact":{
+        "tag": "CONTACT"
+    }
+
+}

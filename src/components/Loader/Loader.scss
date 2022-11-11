@@ -1,0 +1,86 @@
+#loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden!important;
+    flex-direction: row;
+    transition: all 0.8s;
+    z-index: 100;
+    .loader__logo{
+        width: 50px;
+        opacity: 1;
+        animation-name: logo-l;
+        animation-duration: 1s;
+        // animation-iteration-count: infinite;
+        position: relative;
+        animation-timing-function: cubic-bezier(0.75, -0.01, 0.58, 1);
+        left: 0;
+    }
+    @keyframes logo-l {
+        0%{opacity:0;left:35px;top: 0;}
+        70%{opacity:1;left:35px; top:0px}
+        100%{opacity:1;left:0px; top:0px}
+    }
+    .loader__name{
+        color: #b9b9b9;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 0.7%;
+        font-size: 1rem;
+        opacity: 1;
+        position: relative;
+        animation-name: name-l;
+        // animation-iteration-count: infinite;
+        animation-timing-function:cubic-bezier(0.75, -0.01, 0.58, 1);
+        animation-duration: 1s;
+        right: 0;
+    }
+    @keyframes name-l {
+        0%{opacity:0;right: 40px;top: 0;}
+        78%{opacity:0;right:10px;top: 0;}
+        100%{opacity:1;right:0px;top: 0;}
+    }
+}
+
+.loader__img {
+    z-index: 100;
+    width: 15%;
+}
+
+// PC
+@media (min-width: 992px) {
+.loader__img {
+    width: 5%;
+    }
+    .loader__logo{
+        left: 10px;
+        opacity: 1;
+        animation-name: logo-l-pc!important;
+        animation-duration: 1s;
+        // animation-iteration-count: infinite;
+        position: relative;
+        animation-timing-function: cubic-bezier(0.75, -0.01, 0.58, 1);
+    }
+    @keyframes logo-l-pc {
+        0%{opacity:0;left:50px;top: 0;}
+        70%{opacity:1;left:50px; top:0px}
+        100%{opacity:1;left:0px; top:0px}
+    }
+    .loader__name{
+        right: -10px;
+        opacity: 1;
+        animation-name: name-l-pc!important;
+        animation-duration: 1s;
+        // animation-iteration-count: infinite;
+        position: relative;
+        animation-timing-function: cubic-bezier(0.75, -0.01, 0.58, 1);
+    }
+    @keyframes name-l-pc {
+        0%{opacity:0;right: 40px;top: 0;}
+        78%{opacity:0;right:10px;top: 0;}
+        100%{opacity:1;right:0px;top: 0;}
+    }
+}

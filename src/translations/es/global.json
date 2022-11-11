@@ -1,0 +1,32 @@
+{
+    "home":{
+        "subtitle1": "Desarrollador Web Full-Stack.",
+        "subtitle2": "(Orientado al Desarrollo Front-End)"
+    },
+    "aboutMe":{
+        "tag": "SOBRE MÍ",
+        "iam": "",
+        "position": "DESARROLLADOR WEB FULL-STACK 💻",
+        "about": "Soy un desarrollador Full-Stack y estudiante de Ingeniería en Informática de Buenos Aires, Argentina. Estoy interesado en todo el ámbito de la programación y me encuentro con ansias de trabajar en ambiciosos proyectos que requieran trabajar fuera de mi comodidad y conjunto de conocimientos. Me considero a mi mismo como una persona organizada, motivada y solucionadora de problemas, con alta atención a los detalles.",
+        "download": "descargar"
+    },
+    "works":{
+        "tag": "MIS TRABAJOS"
+    },
+    "skills":{
+        "tag": "CONOCIMIENTOS",
+        "fast": "rápido",
+        "fastP": "Tiempos de trabajo rápidos y cargas e interacción libres de lag.",
+        "responsive": "adaptable",
+        "responsiveP": "Mis diseños funcionan en cualquier dispositivo, grande o pequeño.",
+        "intuitive": "intuitivo",
+        "intuitiveP": "Gran preferencia por una UX/UI fácil de usar e intuitiva.",
+        "retailer": "detallista",
+        "retailerP": "Sitios web organizados y estéticos con detalles únicos y personalizados."
+    },
+    "contact":{
+        "tag": "CONTACTO"
+    }
+
+
+}

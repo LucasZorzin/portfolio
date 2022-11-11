@@ -1,0 +1,29 @@
+@import "../../assets/colors/colors.scss";
+.section{
+    background-image: url('../../assets/img/background-sections.gif');
+    background-position: center;
+}
+//TITLES
+.titles-lucas {
+    color: $color;
+    text-transform: uppercase;
+    margin: 0 0 0 1%;
+    border-left-style: solid;
+    border-color: $color;
+    border-left-width: 4px;
+    position: absolute;
+    top: 30px;
+    left: 7px;
+    h2 {
+        padding: 1.5% 0 0 3%;
+        font-size: 1rem;
+    }
+}
+//! //////////////////////////////////////////////////// PC //////////////////////////////////////////////////// !//
+@media (min-width: 992px) {
+    .titles-lucas {
+        h2 {
+            padding: .5% 0 0 1%;
+        }
+    }
+}

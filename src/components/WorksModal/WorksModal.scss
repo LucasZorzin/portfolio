@@ -1,0 +1,126 @@
+@import "../../assets/colors/colors.scss";
+
+.background-modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.modal-content{
+    background: #dee1e9;
+    border-radius: 0;
+}
+
+.close-btn {
+    position: absolute;
+    right: 3%;
+    top: 1.5%;
+    border: none;
+    background-color: transparent;
+    svg{
+        fill: black;
+    }
+}
+
+.works-modal {
+    // position: absolute;
+    background-color: #dee1e9;
+    // width: 70%;
+    height: max-content;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 0 5% 0;
+    transition: all 0.3s;
+    .works-modal__logo {
+        width: 95%;
+        height: auto;
+    }
+    .description {
+        // margin-top: 5%;
+        padding: 0 10%;
+        text-align: center;
+        p {
+            padding: 0;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        h2{
+            text-align: center;
+        }
+        a button {
+            background-color: black;
+            color: white;
+            padding: 1.5%;
+            padding-right: 5%;
+            border: 2px solid black;
+            font-size: 0.65rem;
+            margin: 5% 2% 1% 0;
+            border-radius: 1rem;
+            white-space: nowrap;
+            transition: all 0.4s ease-out;
+            svg {
+                position: relative;
+                top: -1.5px;
+                margin-left: 2%;
+                margin-right: 10px;
+            }
+        }
+        a:hover > button {
+            // transform: scale(0.98, 0.98);
+            background-color: $color;
+            border: 2px solid $color;
+            // box-shadow: 2px 1px 9px 2px rgba(0, 0, 0, 0.24);
+        }
+    }
+    .tech{
+        padding-top: 5%;
+        text-transform: uppercase;
+        font-size: 17px;
+    }
+    .tech-p{
+        height: 30px;
+        font-weight: 400;
+        padding-left: 1% !important;
+        font-size: 12.5px !important;
+        word-spacing: 7px !important;
+    }
+}
+
+//! //////////////////////////////////////////////////// TABLET //////////////////////////////////////////////////// !//
+@media (min-width: 768px) {
+    .works-modal .tech-p{
+        height: 80px;
+    }
+}
+
+//! //////////////////////////////////////////////////// PC //////////////////////////////////////////////////// !//
+@media (min-width: 992px) {
+    .close-btn {
+        right: 1%;
+        top: 2%;
+    }
+    .works-modal .description {
+            padding: 0;
+            text-align: initial;
+        p {
+            padding: 0 15% 0 0;
+            text-align: justify;
+            font-size: 1rem;
+        }
+        h2{
+            text-align: initial;
+        }
+        a button {
+            font-size: 0.72rem;
+        }
+    }
+    .works-modal .tech-p{
+        height: 30px;
+    }
+}

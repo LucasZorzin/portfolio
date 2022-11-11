@@ -1,0 +1,51 @@
+@import "../../../assets/colors/colors.scss";
+
+.links-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 197px;
+    padding-left: .3%;
+}
+
+.contact-icon{
+    padding: 2%;
+    svg{
+    background-color: #191919;
+    border-radius: 50%;
+    padding: 25%;
+    }
+}
+
+.contact-info{
+    font-size: .9rem;
+    color: #adadad;
+    font-family: 'Poppins', Arial;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.btn-contact{
+    background-color: #191919;
+    color: white;
+    padding: 4px 15px 4px 15px;
+    font-size: 0.65rem;
+    border-radius: 1rem;
+    border: none;
+    transition: all .5s ease;
+    svg{
+        margin-left: 3px;
+    }
+}
+
+.btn-contact:hover{
+    background-color: $color;
+    // transform: scale(0.95, 0.95);
+}
+
+//! //////////////////////////////////////////////////// PC //////////////////////////////////////////////////// !//
+@media (min-width: 992px) {
+    .links-contact{
+        width: 215px;
+    }
+}
