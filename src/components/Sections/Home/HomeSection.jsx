@@ -32,7 +32,7 @@ const HomeSection = () => {
     return (
         <div id="parallax" onMouseMove={(e) => parallax(e)} className="section home">
             <div className="row home__content">
-                <h1 className="col-12 home__content-title">Lucas Nahuel Zorzin</h1>
+                <h1 className="col-12 home__content-title">Lucas Zorzin</h1>
 
                 <h2 className="col-12 home__content-subtitle">
                     {(() => {
