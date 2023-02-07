@@ -89,39 +89,6 @@ const SkillsSection = () => {
                 <h2>{language === 'es' ? `${spanish.skills.tag}` : `${english.skills.tag}`}</h2>
             </div>
 
-            {/* ICONS PC */}
-            <div class="row services-position">
-                <div class="col-3 services">
-                    <div class="svg">
-                        <i class="icon-gauge"></i>
-                    </div>
-                    <h4>{language === 'es' ? `${spanish.skills.fast}` : `${english.skills.fast}`}</h4>
-                    <p>{language === 'es' ? `${spanish.skills.fastP}` : `${english.skills.fastP}`}</p>
-                </div>
-
-                <div class="col-3 services">
-                    <div class="svg"><img src={responsiveLogo} alt="icon" /></div>
-                    <h4>{language === 'es' ? `${spanish.skills.responsive}` : `${english.skills.responsive}`}</h4>
-                    <p>{language === 'es' ? `${spanish.skills.responsiveP}` : `${english.skills.responsiveP}`}</p>
-                </div>
-
-                <div class="col-3 services">
-                    <div class="svg">
-                        <i class="icon-lightbulb"></i>
-                    </div>
-                    <h4>{language === 'es' ? `${spanish.skills.intuitive}` : `${english.skills.intuitive}`}</h4>
-                    <p>{language === 'es' ? `${spanish.skills.intuitiveP}` : `${english.skills.intuitiveP}`}</p>
-                </div>
-
-                <div class="col-3 services">
-                    <div class="svg">
-                        <i class="icon-heart-empty"></i>
-                    </div>
-                    <h4>{language === 'es' ? `${spanish.skills.retailer}` : `${english.skills.retailer}`}</h4>
-                    <p>{language === 'es' ? `${spanish.skills.retailerP}` : `${english.skills.retailerP}`}</p>
-                </div>
-            </div>
-
             {/* TYPED SMARTPHONE */}
             <div className="typed-skills skills-title">
 
@@ -163,7 +130,7 @@ const SkillsSection = () => {
 
             {/* Type skills selector */}
             <div className="selector-container">
-                <span className="skill-types" onClick={() => { skillSelectedText('') }}>{language === 'es' ? `Todos` : `All`}</span>
+                <span className="skill-types" onClick={() => { skillSelectedText('') }}>{language === 'es' ? `All` : `All`}</span>
                 <span className="skill-types" onClick={() => { skillSelectedText('front') }}>Front-End</span>
                 <span className="skill-types" onClick={() => { skillSelectedText('back') }}>Back-End</span>
                 <span className="skill-types" onClick={() => { skillSelectedText('database') }}>{language === 'es' ? `Base de Datos` : `Databases`}</span>

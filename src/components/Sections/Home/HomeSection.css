@@ -1,0 +1,180 @@
+textarea:focus, input[type="text"]:focus, textarea[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus, .form-control:focus, .form-select:focus, .btn-close:focus {
+  border-color: black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.home {
+  background-image: url("../../../assets/img/background-portfolio.gif") !important;
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: cover !important;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.home .home__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.home .home__content .home__content-title {
+  color: white;
+  text-align: center;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.home .home__content .home__content-subtitle {
+  color: white;
+  text-align: center;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.home .home__content .home__content-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .home__content .home__content-a .home__content-a-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: "Raleway", Arial, sans-serif;
+  padding: 0.4rem 2.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border-radius: 0;
+  background-color: #ffffff00;
+  border: 1px solid white;
+  color: white;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: 0.6s all ease-in-out;
+  transition: 0.6s all ease-in-out;
+}
+
+.home .home__content .home__content-a .home__content-a-btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+
+.home .home__content .home__content-a .home__content-a-btn.home__content-a-btn--animated::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  background: white;
+  position: absolute;
+  z-index: 1;
+  top: -300px;
+  left: 0;
+  -webkit-transition: 0.6s ease-in-out all;
+  transition: 0.6s ease-in-out all;
+  border-radius: 0px 0px 300px 300px;
+}
+
+.home .home__content .home__content-a .home__content-a-btn--animated:hover::after {
+  top: 0;
+}
+
+.home .home__content .home__content-a-btn span {
+  position: relative;
+  font-size: 0.6rem;
+  z-index: 2;
+  padding: 5%;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.home .home__content .home__content-a-btn span:hover {
+  color: black;
+}
+
+.home .home__arrow {
+  position: absolute;
+  left: 0.23%;
+  right: 0;
+  bottom: 2%;
+  margin: auto;
+  width: 7%;
+}
+
+.fp-overflow {
+  overflow-y: initial !important;
+}
+
+#parallax {
+  background-color: black;
+  height: 100vh;
+}
+
+@media screen and (max-device-width: 820px) and (min-device-height: 100px) and (orientation: landscape) {
+  .home .home__arrow {
+    width: 10px;
+    bottom: 4%;
+  }
+}
+
+@media (min-width: 768px) {
+  .home__content-title {
+    font-size: 3rem;
+  }
+  .home__content-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home {
+    background-size: 90% !important;
+  }
+  .home__content-title {
+    font-size: 2.5rem !important;
+  }
+  .home__content-subtitle {
+    margin-top: 0.2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .home__arrow {
+    width: 1.7% !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .home {
+    background-size: 82% !important;
+  }
+}
+/*# sourceMappingURL=HomeSection.css.map */
