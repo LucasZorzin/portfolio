@@ -133,10 +133,10 @@ const SkillsSection = () => {
                 <span className="skill-types" onClick={() => { skillSelectedText('') }}>{language === 'es' ? `All` : `All`}</span>
                 <span className="skill-types" onClick={() => { skillSelectedText('front') }}>Front-End</span>
                 <span className="skill-types" onClick={() => { skillSelectedText('back') }}>Back-End</span>
-                <span className="skill-types" onClick={() => { skillSelectedText('database') }}>{language === 'es' ? `Base de Datos` : `Databases`}</span>
-                <span className="skill-types" onClick={() => { skillSelectedText('design') }}>{language === 'es' ? `Diseño` : `Design`}</span>
+                <span className="skill-types" onClick={() => { skillSelectedText('database') }}>{language === 'es' ? `Databases` : `Databases`}</span>
+                <span className="skill-types" onClick={() => { skillSelectedText('design') }}>{language === 'es' ? `Design` : `Design`}</span>
                 <span className="skill-types" onClick={() => { skillSelectedText('cms') }}>CMS</span>
-                <span className="skill-types" onClick={() => { skillSelectedText('others') }}>{language === 'es' ? `Otros` : `Others`}</span>
+                <span className="skill-types" onClick={() => { skillSelectedText('others') }}>{language === 'es' ? `Others` : `Others`}</span>
             </div>
 
             {/* SKILLS CAROUSEL */}
