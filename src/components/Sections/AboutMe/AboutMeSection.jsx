@@ -23,9 +23,15 @@ const AboutMeSection = () => {
                     <p className="about__p">
                         {language === 'es' ? `${spanish.aboutMe.about}` : `${english.aboutMe.about}`}
                     </p>
-                    <a href="https://drive.google.com/uc?id=1uTu-V81PQ3h6BzMIjRI2WU58nBPWeLtl" target="_blank" rel="noreferrer" className="about-cv">
-                        <button className="about-cv__btn about-cv__btn--animated"><span>{language === 'es' ? `${spanish.aboutMe.download}` : `${english.aboutMe.download}`}</span></button>
-                    </a>
+                    {language === 'es' ?
+                        <a href="https://drive.google.com/uc?export=download&id=1x8LWvqDO-fjScC-F7KuC24Ok3bbQPvJo" target="_blank" rel="noreferrer" className="about-cv">
+                            <button className="about-cv__btn about-cv__btn--animated"><span>{`${spanish.aboutMe.download}`}</span></button>
+                        </a>
+                        :
+                        <a href="https://drive.google.com/uc?export=download&id=1Mq1Mg29kyZnotfdW-O07H_8XKWW55RvX" target="_blank" rel="noreferrer" className="about-cv">
+                            <button className="about-cv__btn about-cv__btn--animated"><span>{`${english.aboutMe.download}`}</span></button>
+                        </a>
+                    }
 
                 </div>
 
