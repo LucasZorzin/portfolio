@@ -24,7 +24,7 @@ function WorksModal(props) {
                                     <img className="works-modal__logo" src={(`/assets/img/works/${selectedProject.picture}`)} alt={selectedProject.fullname} width='500px' height='335px'/>
                                 </div>
                                 <div className="col-12 col-md-6 description">
-                                    <h2>{selectedProject.fullname}</h2>
+                                    <h2 className='mt-2'>{selectedProject.fullname}</h2>
                                     <p>{selectedProject.description}</p>
                                     <h4 className='tech'>{language === 'en'?'💻Technologies used:':'💻Tecnologías usadas:'}</h4>
                                     <p className='tech-p'>
